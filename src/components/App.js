@@ -3,6 +3,7 @@ import TaskList from "./taskList"
 import TaskListContextProvider from "../context/TaskListContext"
 import "../App.css"
 import TaskForm from "./TaskForm"
+import Header from "./Header"
 
 class App extends React.Component {
     render(){
@@ -10,6 +11,7 @@ class App extends React.Component {
             <TaskListContextProvider >
                 <div className="container">
                     <div className="app-wrapper">
+                        <Header />
                         <div className="main">
                             <TaskForm />
                             <TaskList />
